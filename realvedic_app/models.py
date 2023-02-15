@@ -74,7 +74,7 @@ class images_and_banners(models.Model):
     image=models.TextField()
 
 class blogs(models.Model):
-    image=models.ImageField()
+    image=models.TextField()
     title=models.TextField()
     content=models.TextField()
     Points=models.TextField(blank=True)
@@ -133,7 +133,7 @@ class doctor_info(models.Model):
       experience=models.TextField(blank=True)
       speciality=models.TextField(blank=True)
       available=models.TextField(blank=True)
-      image=models.ImageField(upload_to='images/')
+      image=models.TextField()
 
 
 
