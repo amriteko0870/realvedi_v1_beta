@@ -151,7 +151,7 @@ def UserCartView(request,format=None):
                 'unit_price':i['price_per_unit'],
                 'price':eval(i['price_per_unit'])*eval(i['quantity']),
                 'quantity':i['quantity'],
-                'image':j['image']
+                'image':j['image'].split(',')[0]
             }
             #subtotal=subtotal+eval(prod_dict['price'])
             cartitems.append(prod_dict)
